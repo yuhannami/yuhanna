@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+}
+
+    body {
+    background-color: #E0E1DD;
+    margin: 0px;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+  }
+  
+  
+  header {
+    background-color: #0D1B2A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  nav {
+    text-align: center;
+    font-family: Arial;
+    margin-bottom: 20px;
+    background-color: #1B263B;
+    padding: 16px;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: #E0E1DD;
+    color: #0D1B2A;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #E0E1DD;
+    color: #1B263B;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .email-link {
+    background-color: #5f7285;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.email-link:hover {
+    background-color: #0056b3; /* 懸停時的背景顏色 */
+}
+
+  .contact {
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    background-color: #415A77;
+    color: #fefffd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skills-image {    
+  float: right;
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.contact h2 {
+  color: #fefffd;
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-left: 6px solid #778DA9;
+  padding-left: 12px;
+  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+}
+  
+.skills-list li {
+  font-size: 18px;
+  margin: 12px 0;
+  color: #E0E1DD;
+}
+
+.progress {
+  background-color: #E0E1DD;
+  border-radius: 10px;
+  height: 20px;
+  width: 50%;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  background-color: #e8f88d;
+  height: 100%;
+  text-align: center;
+  line-height: 20px;
+  color: rgb(31, 30, 30);
+  font-weight: bold;
+  transition: width 0.3s ease;
+  border-radius: 10px;
+}
+
+
+.photo{
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+  }
+
+  .info {
+    padding: 20px; /* 內邊距 */
+    color: #E0E1DD; /* 字體顏色 */
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 10px 0;
+  }
+
+  .insight {
+    color: #0D1B2A;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #E0E1DD;
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 1 2px 8px rgba(0, 0, 0, 0.1);
+    float: right;
+}
+
+.black{
+    color: #1B263B;
+    text-align: center;
+}
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  
+    max-width: 1000px;     /* 限制最大寬度 */
+    margin: 0 auto;        /* 讓 main 區塊置中 */
+    width: 100%;           /* 預設寬度為 100% */
+    box-sizing: border-box;
+  }
+
+    main::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+  footer {
+    text-align: center;
+    background-color: #1B263B;
+    color: #E0E1DD;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .project-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.project-row:nth-child(odd) {
+    flex-direction: row; /* 奇數項目：照片左，文字右 */
+}
+
+.project-row:nth-child(even) {
+    flex-direction: row-reverse; /* 偶數項目：照片右，文字左 */
+}
+  
+  .project-row.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .project-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-img:hover {
+    transform: scale(1.03);
+  }
+  
+  .project-text {
+    width: 50%;
+    padding: 20px;
+    color: #f0f0f0;
+  }
+  
+  .project-text h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .project-text p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 25px 0;
+    padding: 15px;
+    border-bottom: 3px solid #778DA9;
+    font-weight: bold;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px; /* 邊角圓弧 */
+    transition: background-color 0.3s ease; /* 背景顏色過渡效果 */
+}
+
+
+li {
+    line-height: 1.8; /* 設置行距，可以調整這個值 */
+    margin-bottom: 10px; /* 每個項目之間的空間 */
+    color: #E0E1DD; /* 項目文字顏色 */
+}
+
+h6 {
+    font-size: 22px; /* 字體大小 */
+}
+
+h3{
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+}
